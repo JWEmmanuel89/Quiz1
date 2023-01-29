@@ -2,8 +2,23 @@
 
 package main
 
-// #1. Create struct triangle
+import (
+	"math"
+)
+
+// #1. Create struct type Triangle
 type Triangle struct {
 	Base   float64
 	Height float64
+}
+
+// #2. Create method type Area
+func (t Triangle) Area() float64 {
+	return (t.Base * t.Height) / 2
+}
+
+// #2. Create method type Perimeter
+func (t Triangle) Perimeter() float64 {
+	sideC := math.Sqrt((t.Base * t.Base) + (t.Height * t.Height))
+	return t.Base + t.Height + sideC
 }
