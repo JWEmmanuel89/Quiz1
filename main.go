@@ -25,13 +25,13 @@ func (t Triangle) Perimeter() float64 {
 }
 
 func main() {
-	// #4. Create variable of type Triangle
+	// #4. Create variable with value for type Triangle
 	tri1 := Triangle{
 		Base:   2,
 		Height: 5,
 	}
 
-	//#5. Call Area and Perimeter of Triangle
+	//#5. Call and test Area and Perimeter of type Triangle
 	fmt.Println(tri1.Area())
 	fmt.Println(tri1.Perimeter())
 }
